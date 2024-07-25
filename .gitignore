@@ -149,3 +149,5 @@ tests/e2e/.env
 # Strapi
 ############################
 examples/**/types/generated
+# path: ./.gitignore
+package-lock.json

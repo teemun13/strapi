@@ -14869,7 +14869,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-env@npm:7.0.3, cross-env@npm:^7.0.3":
+"cross-env@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-env@npm:7.0.3"
   dependencies:
@@ -26030,6 +26030,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pg-connection-string@npm:2.6.4, pg-connection-string@npm:^2.6.4":
+  version: 2.6.4
+  resolution: "pg-connection-string@npm:2.6.4"
+  checksum: 10c0/0d0b617df0fc6507bf6a94bdcd56c7a305788a1402d69bff9773350947c8f525d6d8136128065370749a3325e99658ae40fbdcce620fb8e60126181f0591a6a6
+  languageName: node
+  linkType: hard
+
 "pg-int8@npm:1.0.1":
   version: 1.0.1
   resolution: "pg-int8@npm:1.0.1"
@@ -26046,10 +26053,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pg-pool@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "pg-pool@npm:3.6.2"
+  peerDependencies:
+    pg: ">=8.0"
+  checksum: 10c0/14c524549490954b5e48457a4b808df8f619f6deeb3b395b0cd184a8f4ed65a9273fe0697ba0341a41d6745af197f1437eb1cf51fff0cbbf5b0fb3852ebe5392
+  languageName: node
+  linkType: hard
+
 "pg-protocol@npm:^1.6.0":
   version: 1.6.0
   resolution: "pg-protocol@npm:1.6.0"
   checksum: 10c0/318a4d1e9cebd3927b10a8bc412f5017117a1f9a5fafb628d75847da7d1ab81c33250de58596bd0990029e14e92a995a851286d60fc236692299faf509572213
+  languageName: node
+  linkType: hard
+
+"pg-protocol@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "pg-protocol@npm:1.6.1"
+  checksum: 10c0/7eadef4010ac0a3925c460be7332ca4098a5c6d5181725a62193fcfa800000ae6632d98d814f3989b42cf5fdc3b45e34c714a1959d29174e81e30730e140ae5f
   languageName: node
   linkType: hard
 
@@ -26087,6 +26110,28 @@ __metadata:
     pg-native:
       optional: true
   checksum: 10c0/573446dec1cbe52b60890eb6c9b1fa0272c26699ba70426216d1af3ad749cc188e956717b9bdb4028e84b327965a408c0da44946750ed4685d3832b2305e4c4a
+  languageName: node
+  linkType: hard
+
+"pg@npm:8.12.0":
+  version: 8.12.0
+  resolution: "pg@npm:8.12.0"
+  dependencies:
+    pg-cloudflare: "npm:^1.1.1"
+    pg-connection-string: "npm:^2.6.4"
+    pg-pool: "npm:^3.6.2"
+    pg-protocol: "npm:^1.6.1"
+    pg-types: "npm:^2.1.0"
+    pgpass: "npm:1.x"
+  peerDependencies:
+    pg-native: ">=3.0.1"
+  dependenciesMeta:
+    pg-cloudflare:
+      optional: true
+  peerDependenciesMeta:
+    pg-native:
+      optional: true
+  checksum: 10c0/973e49b5e7327c42fc62806efa8c824159ab7a0b676cefe6eeb51a59b6e226587911ec27697f36c18d69e58a7f4f0b76d0829364087194d13ed431ab7c9c417a
   languageName: node
   linkType: hard
 
@@ -29343,7 +29388,7 @@ __metadata:
     chokidar: "npm:3.5.3"
     coffee: "npm:5.5.1"
     core-js: "npm:3.33.0"
-    cross-env: "npm:7.0.3"
+    cross-env: "npm:^7.0.3"
     dotenv: "npm:14.2.0"
     eslint: "npm:8.50.0"
     eslint-config-airbnb: "npm:^19.0.4"
@@ -29377,10 +29422,13 @@ __metadata:
     lint-staged: "npm:13.3.0"
     lodash: "npm:4.17.21"
     nx: "npm:16.8.1"
+    pg: "npm:8.12.0"
+    pg-connection-string: "npm:2.6.4"
     plop: "npm:2.7.6"
     prettier: "npm:2.8.4"
     qs: "npm:6.11.1"
     rimraf: "npm:3.0.2"
+    sqlite3: "npm:5.1.2"
     supertest: "npm:6.3.3"
     ts-jest: "npm:29.1.0"
     typescript: "npm:5.2.2"
